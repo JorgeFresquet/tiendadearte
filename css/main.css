@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* este comentario no se ve al compilar*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 28px;
+}
+
+main {
+  padding: 50px;
+}
+
+/*tamaños tipograficos generales*/
+p {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #375277;
+}
+
+h2 {
+  font-size: 28px;
+  color: #9f5679;
+}
+
+li {
+  font-size: 12px;
+}
+
+/*footer*/
+.contendor_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #9f5679;
+}
+.contendor_footer p {
+  margin: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+}
+.contendor_footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.contendor_footer ul li {
+  margin: 5px;
+  font-weight: 200;
+}
+.contendor_footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* header 2*/
+header {
+  position: sticky !important;
+  top: 0;
+  z-index: 3;
+}
+header .contenedor_nav {
+  background-color: #375277;
+  padding: 15px 40px;
+}
+header .contenedor_nav .container-fluid .contenedor_logo_txt {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+header .contenedor_nav .container-fluid .contenedor_logo_txt img {
+  display: none !important;
+}
+header .contenedor_nav .container-fluid .contenedor_boton {
+  border: none;
+}
+header .contenedor_nav .container-fluid .contenedor_boton .boton_nav {
+  width: 30px;
+  color: #ffffff;
+}
+header .contenedor_nav .container-fluid .contenedor_boton:hover {
+  border: none;
+  color: transparent;
+}
+
+.item_menu {
+  color: #ffffff;
+  margin: 0px 30px;
+}
+
+/* proyectos*/
+.titulo_proyectos {
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.contenedor_seleccion_proyectos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  margin: 20px 0px 35px;
+}
+
+.contenedor_trabajos {
+  justify-content: center;
+}
+.contenedor_trabajos div {
+  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*servicios*/
+.titulo_secciones {
+  margin-left: 10px;
+  padding: 15px 0px;
+}
+
+.contenedor-servicios {
+  justify-content: flex-end;
+}
+.contenedor-servicios .destacado {
+  font-weight: 800;
+  color: #9f5679;
+  margin-bottom: 5px;
+}
+
+.contenedor_img_servicios {
+  justify-content: space-around;
+  margin: 15px 0px;
+}
+.contenedor_img_servicios .img_servicios {
+  margin: 14px 0px;
+}
+
+/*nosotros*/
+.contendeor_img_nosotros {
+  justify-content: center;
+}
+.contendeor_img_nosotros article .img_Nosotros {
+  width: 100%;
+}
+
+.asociados {
+  padding: 50px;
+}
+.asociados .titulo_asociados {
+  text-align: center;
+}
+.asociados .container-fluid .contenedor_asociados {
+  justify-content: space-around;
+  text-align: center;
+}
+.asociados .container-fluid .contenedor_asociados .contendeor_listado_asociados {
+  list-style-type: none;
+}
+
+/*contacto*/
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+  align-items: stretch;
+  background-image: url("../image/fondo-contacto.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 700px;
+}
+.contenedor-contacto .fondo-contacto {
+  background-color: #ffffff;
+  width: 90%;
+  height: 80%;
+  padding: 30px;
+}
+.contenedor-contacto .fondo-contacto .contenedor_formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+}
+.contenedor-contacto .fondo-contacto .contenedor_formulario .text_formulario {
+  text-align: left;
+}
+.contenedor-contacto .fondo-contacto .contenedor_formulario .line_formulario {
+  height: 30px;
+}
+.contenedor-contacto .fondo-contacto .contenedor_formulario .boton {
+  width: 30%;
+  background-color: #375277;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.pie_contacto {
+  margin: 0px;
+}
+
+/*animacion*/
+a:hover {
+  transform: scale(1.3, 1.3);
+  text-decoration-line: underline;
+  font-weight: 500;
+}
+
+.contenedor_trabajos div {
+  transition: 1s;
+}
+.contenedor_trabajos div p {
+  color: #375277;
+}
+.contenedor_trabajos div:hover {
+  transform: scale(1.1, 1.1);
+}
+.contenedor_trabajos div:hover p:hover {
+  color: #9f5679;
+}
+
+/*media queries sm */
+@media only screen and (min-width: 576px) {
+  .contenedor_logo_txt img {
+    display: inline-block !important;
+    width: 40px;
+    margin: 0px 10px;
+  }
+  .titulo_proyectos {
+    margin: 10px 10px;
+    text-align: left;
+  }
+  .contenedor_seleccion_proyectos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px 20px;
+  }
+  .contendor_footer ul {
+    flex-direction: row;
+  }
+  .contendor_footer ul li {
+    margin: 20px;
+  }
+  .titulo_asociados {
+    text-align: center;
+  }
+  .contenedor_asociados {
+    text-align: left;
+  }
+}
+/*media queries md */
+@media only screen and (min-width: 768px) {
+  * {
+    line-height: 32px;
+  }
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 48px;
+    color: #375277;
+  }
+  h2 {
+    font-size: 20px;
+    color: #9f5679;
+  }
+  li {
+    font-size: 14px;
+  }
+  .contendor_footer {
+    flex-direction: row;
+  }
+  .contendor_redes {
+    margin: 0;
+  }
+  .contenedor_logo_txt {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .titulo_secciones {
+    font-size: 65px;
+  }
+  .asociados .titulo_asociados {
+    text-align: left;
+    margin-left: 50px;
+  }
+}
+/*media queries lg */
+@media only screen and (min-width: 992px) {
+  * {
+    line-height: 36px;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 64px;
+    color: #375277;
+  }
+  h2 {
+    font-size: 24px;
+    color: #9f5679;
+  }
+  li {
+    font-size: 15px;
+  }
+  .contenedor_logo_txt {
+    font-weight: 800;
+    font-size: 24px;
+  }
+  .titulo_secciones {
+    font-size: 75px;
+  }
+  .fondo-contacto {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

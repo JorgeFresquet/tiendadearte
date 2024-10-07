@@ -1,0 +1,29 @@
+/*nosotros*/
+.contendeor_img_nosotros{
+    justify-content: center;
+    article{
+        .img_Nosotros{
+            width: 100%;
+        }
+
+    }
+}
+
+.asociados{
+    padding: 50px;
+    .titulo_asociados{
+        text-align: center;
+    }
+    .container-fluid{
+        .contenedor_asociados{
+            justify-content: space-around;
+            text-align: center;
+            .contendeor_listado_asociados{
+                list-style-type: none;
+            }
+        }
+
+    }
+}
+
+

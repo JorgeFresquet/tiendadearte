@@ -1,0 +1,33 @@
+// este comentario no se ve
+/* este comentario no se ve al compilar*/
+
+//compilado de reset
+@import "./config/vars";
+@import "./config/mixing";
+
+@import "./config/reset";
+@import "./config/tipo";
+
+@import "./config/footer";
+@import "./config/barranav";
+
+
+
+
+//home
+@import "./home/proyectos";
+//servicios
+@import "./servicios/servicios";
+//servicios
+@import "./nosotros/nosotros";
+//servicios
+@import "./contacto/contacto";
+//animacion
+@import "./animacion/animacion";
+
+
+//Mediaqueries
+@import "./mq/mq";
+
+
+

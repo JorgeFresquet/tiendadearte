@@ -1,0 +1,41 @@
+/*contacto*/
+.contenedor-contacto{
+    @include flex(center,center,stretch);
+    background-image: url("../image/fondo-contacto.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 700px;
+    .fondo-contacto{
+        background-color: $blanco;
+        width: 90%;
+        height: 80%;
+        padding: 30px;
+        .contenedor_formulario{
+            @include flex(center,column,stretch);
+            .text_formulario{
+                text-align: left;
+            }
+            .line_formulario{
+   
+                height: 30px;
+            }
+            .boton{
+                width: 30%;
+                background-color: $azul;
+                color: $blanco;
+                border-radius: 20px;
+                border: none;
+                margin-top: 50px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.pie_contacto{
+    margin: 0px;
+}

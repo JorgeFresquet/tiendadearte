@@ -1,0 +1,23 @@
+/* proyectos*/
+.titulo_proyectos{
+    margin: 10px 10px;
+    text-align: center;
+}
+.contenedor_seleccion_proyectos {
+    @include flex(space-between,column,center);
+    padding: 12px;
+    margin: 20px 0px 35px;
+}
+.contenedor_trabajos{
+    justify-content: center;
+   div{
+        margin: 10px 0px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.titulo_banner{
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -1,0 +1,37 @@
+/* header 2*/
+header{
+    position: sticky!important;
+    top: 0;  
+    z-index: 3; 
+    .contenedor_nav{
+        background-color: $azul;
+        padding: 15px 40px;    
+        .container-fluid{
+            .contenedor_logo_txt{
+                display: flex;
+                align-items: center;
+                color: $blanco;
+                font-weight: 400;
+                font-size: 16px;  
+                img{
+                    display: none!important;
+                }      
+            }
+            .contenedor_boton{
+                border: none;
+                .boton_nav{
+                    width: 30px;
+                    color: $blanco;
+                }
+            } 
+            .contenedor_boton:hover{
+                border: none;
+                color:transparent;
+            }
+        }
+    }     
+}
+.item_menu{
+    color: $blanco;
+    margin: 0px 30px;
+}
